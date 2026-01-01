@@ -1,0 +1,4 @@
+StatusChangeID,DoctorID,OldStatus,NewStatus,Proof,Notes,ChangedBy,ChangedAt,IsActive
+SCH-0001,D004,Active,Clearance,,Rotation paperwork,adminresident@example.com,2025-12-20T09:00:00Z,TRUE
+SCH-0002,D005,Active,Leave,,Annual leave,adminresident@example.com,2025-12-22T09:30:00Z,TRUE
+SCH-0003,D004,Clearance,Active,,Cleared and returned,adminresident@example.com,2026-01-05T09:00:00Z,TRUE
