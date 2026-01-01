@@ -1,0 +1,7 @@
+AttendanceID,DoctorID,Date,AttendanceStatus,ReplacementBy,LateReason,TimeMarked,MarkedBy
+D001-20260101,D001,2026-01-01,Present,,,2026-01-01T10:05:00Z,coord_01@example.com
+D002-20260101,D002,2026-01-01,Late,,Traffic delay,2026-01-01T10:25:00Z,coord_01@example.com
+D003-20260101,D003,2026-01-01,Absent,,,2026-01-01T11:00:00Z,coord_02@example.com
+D004-20260101,D004,2026-01-01,OFF,,,2026-01-01T08:30:00Z,adminresident@example.com
+D006-20260101,D006,2026-01-01,OFF,,,2026-01-01T08:40:00Z,adminresident@example.com
+D003-20260102,D003,2026-01-02,Present,D006,,2026-01-02T10:10:00Z,coord_02@example.com
