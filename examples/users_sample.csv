@@ -1,0 +1,5 @@
+UserID,Email,Role,IsActive
+U001,adminresident@example.com,AdminResident,TRUE
+U002,coord_01@example.com,Coordinator,TRUE
+U003,coord_02@example.com,Coordinator,TRUE
+U004,viewer@example.com,Viewer,TRUE
