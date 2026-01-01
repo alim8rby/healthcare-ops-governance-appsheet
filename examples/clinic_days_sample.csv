@@ -1,0 +1,4 @@
+ClinicDayID,Date,DayName,ClinicType,IsActive,DeskCapacity
+CD-20260101-GEN,2026-01-01,Thursday,General Clinics,TRUE,12
+CD-20260101-SPEC,2026-01-01,Thursday,Special Clinics,TRUE,6
+CD-20260102-GEN,2026-01-02,Friday,General Clinics,FALSE,0
