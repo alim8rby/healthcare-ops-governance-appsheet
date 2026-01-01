@@ -1,0 +1,8 @@
+DoctorID,Name,AssignedDay,ClinicType,AdminStatus,Expected_35D,Attended_35D,Late_35D,Missed_35D
+D001,Doctor 001,Saturday,General Clinics,Active,12,9,2,1
+D002,Doctor 002,Saturday,General Clinics,Active,10,8,1,1
+D003,Doctor 003,Sunday,General Clinics,Active,11,10,0,1
+D004,Doctor 004,Monday,General Clinics,Clearance,0,0,0,0
+D005,Doctor 005,Tuesday,General Clinics,Leave,0,0,0,0
+D006,Doctor 006,,Special Clinics,Active,0,0,0,0
+D007,Doctor 007,Wednesday,General Clinics,Active,9,7,1,1
