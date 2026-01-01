@@ -1,0 +1,72 @@
+erDiagram
+  DOCTORS ||--o{ ATTENDANCE : "has"
+  DOCTORS ||--o{ STATUS_CHANGE_HISTORY : "has"
+  DOCTORS ||--o{ BEHAVIOR_CASES : "has"
+  USERS   ||--o{ ATTENDANCE : "marks"
+  USERS   ||--o{ STATUS_CHANGE_HISTORY : "changes"
+  USERS   ||--o{ BEHAVIOR_CASES : "reports"
+  CLINIC_DAYS ||--o{ ATTENDANCE : "validates"
+
+  DOCTORS ||--o{ ATTENDANCE : "ReplacementBy (self-ref)"
+
+  DOCTORS {
+    string DoctorID PK
+    string Name
+    string AssignedDay
+    string ClinicType
+    string AdminStatus "read-only projection"
+    int Expected_35D
+    int Attended_35D
+    int Late_35D
+    int Missed_35D
+  }
+
+  ATTENDANCE {
+    string AttendanceID PK "DoctorID-YYYYMMDD"
+    string DoctorID FK
+    date Date
+    string AttendanceStatus "Present|Late|Absent|OFF"
+    string ReplacementBy FK
+    string LateReason
+    datetime TimeMarked
+    string MarkedBy FK
+  }
+
+  STATUS_CHANGE_HISTORY {
+    string StatusChangeID PK
+    string DoctorID FK
+    string OldStatus
+    string NewStatus
+    string Proof
+    string Notes
+    string ChangedBy FK
+    datetime ChangedAt
+    boolean IsActive
+  }
+
+  BEHAVIOR_CASES {
+    string CaseID PK
+    string DoctorID FK
+    date Date
+    string CaseType
+    string Description
+    string ReportedBy FK
+    string ActionTaken
+    string LinkedAttendanceID
+  }
+
+  USERS {
+    string UserID PK
+    string Email
+    string Role
+    boolean IsActive
+  }
+
+  CLINIC_DAYS {
+    string ClinicDayID PK
+    date Date
+    string DayName
+    string ClinicType
+    boolean IsActive
+    int DeskCapacity
+  }
